@@ -60,6 +60,7 @@ $(function() {
             data:$(this).serialize(),
             success: function(res){
                 if(res.status !== 0) {
+                    console.log(res)
                     return layer.msg('登录失败!')
                 }
                 layer.msg('登录成功!')
